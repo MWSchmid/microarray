@@ -48,5 +48,5 @@ download and unpack the [rice test data](https://github.com/MWSchmid/microarray/
 
 ### processing in R, 44K agilent dual-channel arrays
 
-download and unpack the [Physcomitrella test data](https://github.com/MWSchmid/microarray/blob/master/physco.zip?raw=true) and see [agilentSingleChannelExample.R](https://github.com/MWSchmid/microarray/blob/master/agilentDualChannelExample.R)
+download and unpack the [Physcomitrella test data](https://github.com/MWSchmid/microarray/blob/master/physco.zip?raw=true) and see [agilentDualChannelExample.R](https://github.com/MWSchmid/microarray/blob/master/agilentDualChannelExample.R)
 
