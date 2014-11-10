@@ -44,9 +44,9 @@ python prepareMicroarrayProbes.py EXTRACT aligned.txt probeNameToID.txt IDtoProb
 
 ### processing in R, 44K agilent single-channel arrays
 
-download and unpack the [test data](https://github.com/MWSchmid/microarray/blob/master/testData.zip?raw=true) and see [agilentSingleChannelExample.R](https://github.com/MWSchmid/microarray/blob/master/agilentSingleChannelExample.R)
+download and unpack the [rice test data](https://github.com/MWSchmid/microarray/blob/master/rice.zip?raw=true) and see [agilentSingleChannelExample.R](https://github.com/MWSchmid/microarray/blob/master/agilentSingleChannelExample.R)
 
 ### processing in R, 44K agilent dual-channel arrays
 
-download and unpack the [test data](https://github.com/MWSchmid/microarray/blob/master/testData.zip?raw=true) and see [agilentSingleChannelExample.R](https://github.com/MWSchmid/microarray/blob/master/agilentDualChannelExample.R)
+download and unpack the [Physcomitrella test data](https://github.com/MWSchmid/microarray/blob/master/physco.zip?raw=true) and see [agilentSingleChannelExample.R](https://github.com/MWSchmid/microarray/blob/master/agilentDualChannelExample.R)
 
