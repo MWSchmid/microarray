@@ -2,7 +2,7 @@ microarray
 ==========
 
 I was recently asked how to get up-to-date annotations of microarrays. One way is to use a current version of cDNAs and the probe sequences supplied by the manufacturer.
-The following examples were used in conjunction with Agilent 44K microarrays (Physcomitrella and rice to be specific). I may add an agilent example as well.
+The following examples were used in conjunction with Agilent 44K microarrays (Physcomitrella and rice to be specific). I may add an Affymetrix example as well.
 
 ### some preparation steps (align the probes to cDNA sequences which you are interested in)
 The pre-processor script relies on a working [Bowtie](http://bowtie-bio.sourceforge.net/index.shtml) installation. The binaries are assumed to be located in your PATH.
