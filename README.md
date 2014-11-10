@@ -12,6 +12,8 @@ To see all options of the python script type:
 python prepareMicroarrayProbes.py
 ```
 
+Download and unpack the [pre-process test data](https://github.com/MWSchmid/microarray/blob/master/physcoSeqTabAndCDNA.zip?raw=true). The file called Agilent-017743_GPL14653_spotSequences.txt corresponds to the seqTable.txt and PpatensV6_filtered_cosmoss_mRNA.fasta to cDNA.fasta.
+
 #### build the bowtie index
 To align the probes to the cDNAs of interest, one needs to build a bowtie index first. Note that the locus ID (so the ID that gets the expression value) corresponds to the first field after the arrow (>) in the fasta file (split using space character).
 
