@@ -15,7 +15,7 @@ if (length(unique(annotation$Name)) != nrow(annotation)) {stop("The names in the
 rawData <- read.maimages(unique(file.path(workDir, annotation$File)), source = "agilent", green.only = TRUE, names = annotation$Name, annotation = c("ProbeName"))
 
 # correct, normalize, and extract
-bgData <- backgroundCorrect(rawData, method = "normexp")
+bgData <- backgroundCorrect(rawData) # method = "normexp" caused some problems for someone
 normData <- normalizeBetweenArrays(bgData, method = "quantile")
 normEset <- normData$E; rownames(normEset) <- normData$genes$ProbeName
 
