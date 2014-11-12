@@ -34,7 +34,7 @@ rawData <- list(E = rawDataE, Eb = rawDataEb, targets = rbind(redTargets, greenT
 class(rawData) <- "EListRaw"
 
 # correct, normalize, and extract
-bgData <- backgroundCorrect(rawData, method = "normexp")
+bgData <- backgroundCorrect(rawData) # method = "normexp" caused some problems for someone
 normData <- normalizeBetweenArrays(bgData, method = "quantile")
 normEset <- normData$E; rownames(normEset) <- normData$genes$ProbeName
 
