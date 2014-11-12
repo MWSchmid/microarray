@@ -10,6 +10,7 @@ workDir <- "/home/marc/microarray/testData/physco"
 # Channel: the channel for this sample (Cy3 or Cy5)
 annotation <- read.table(file.path(workDir, "annotation.txt"), header = TRUE, sep = '\t', quote = "", stringsAsFactors = FALSE)
 annotation$weirdName <- paste(file.path(workDir, annotation$File), annotation$Channel, sep = '_')
+if (length(unique(annotation$Name)) != nrow(annotation)) {stop("The names in the annotation file must be unique!")}
 
 # if you like to remove the "swap experiments" (which are in a way technical replicates and maybe not of interest - it is good to check though if sampleA is similar on both channels)
 # annotation <- annotation[-grep("swap", annotation$Name),]
