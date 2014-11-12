@@ -8,6 +8,7 @@ workDir <- "/home/marc/microarray/testData/rice"
 # Group: a name for the sample group
 # File: the name of the microarray data file
 annotation <- read.table(file.path(workDir, "annotation.txt"), header = TRUE, sep = '\t', quote = "", stringsAsFactors = FALSE)
+if (length(unique(annotation$Name)) != nrow(annotation)) {stop("The names in the annotation file must be unique!")}
 
 # read raw data using read.maimages (from limma)
 # note that the annotation = c("ProbeName") is important. Make sure that the column ProbeName exists in the microarray data file
